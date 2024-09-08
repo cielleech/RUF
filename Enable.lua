@@ -76,7 +76,6 @@ local function SetupFrames(self, unit)
 	-- Frame Background
 	RUF.SetFrameBackground(self, unit)
 
-
 	-- Setup Bars
 	RUF.SetHealthBar(self, unit)
 	self.Health.Override = RUF.HealthUpdate
@@ -269,6 +268,7 @@ function RUF:OnEnable()
 			if not _G[RUF.db.profile.unit[profile].Frame.Position.AnchorFrame] then
 				anchorFrame = 'UIParent'
 			end
+
 			self:Spawn(profile):SetPoint(
 				RUF.db.profile.unit[profile].Frame.Position.AnchorFrom,
 				anchorFrame,

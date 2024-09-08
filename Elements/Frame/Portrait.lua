@@ -54,8 +54,6 @@ local function Update(self, event, unit)
 	--]]
 	if(element.PreUpdate) then element:PreUpdate(unit) end
 
-
-
 	local guid = UnitGUID(unit)
 	local isAvailable = UnitIsConnected(unit) and UnitIsVisible(unit)
 	if(event ~= 'OnUpdate' or element.guid ~= guid or element.state ~= isAvailable) then

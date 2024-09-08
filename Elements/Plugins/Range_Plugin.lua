@@ -117,6 +117,7 @@ HarmSpells['WARLOCK'] = {
 
 
 local function IsUnitInRange(unit)
+	if UnitAffectingCombat('player') then return end
 	if not unit then return end
 	if UnitInRange(unit) then return true end -- If the unit is in the same group we don't need to check anything else.
 	local canAttack = UnitCanAttack('player', unit)

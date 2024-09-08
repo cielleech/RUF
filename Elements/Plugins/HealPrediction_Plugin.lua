@@ -197,8 +197,8 @@ local function Update(self, event, unit)
 			element.myBar:SetValue(myIncomingHeal)
 			if myIncomingHeal > 0 then
 				element.myBar:SetAlpha(1)
+				element.myBar:Show()
 			end
-			element.myBar:Show()
 		end
 	end
 
@@ -210,8 +210,8 @@ local function Update(self, event, unit)
 			element.otherBar:SetValue(otherIncomingHeal)
 			if myIncomingHeal > 0 then
 				element.otherBar:SetAlpha(1)
+				element.otherBar:Show()
 			end
-			element.otherBar:Show()
 		end
 	end
 
